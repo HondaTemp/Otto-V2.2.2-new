@@ -97,8 +97,8 @@ constexpr HardwareConfig CAMERA_VERSION_CONFIG = {
     .display_rst_pin = GPIO_NUM_1,
     .display_cs_pin = GPIO_NUM_NC,
 
-    .i2c_sda_pin = GPIO_NUM_15,
-    .i2c_scl_pin = GPIO_NUM_16,
+    .i2c_sda_pin = GPIO_NUM_NC,
+    .i2c_scl_pin = GPIO_NUM_NC,
 };
 
 constexpr HardwareConfig NON_CAMERA_VERSION_CONFIG = {
@@ -106,8 +106,8 @@ constexpr HardwareConfig NON_CAMERA_VERSION_CONFIG = {
     .power_adc_unit = ADC_UNIT_2,
     .power_adc_channel = ADC_CHANNEL_3,
 
-    .right_leg_pin = GPIO_NUM_39,
-    .right_foot_pin = GPIO_NUM_38,
+    .right_leg_pin = GPIO_NUM_10,
+    .right_foot_pin = GPIO_NUM_11,
     .left_leg_pin = GPIO_NUM_17,
     .left_foot_pin = GPIO_NUM_18,
     .left_hand_pin = GPIO_NUM_8,
@@ -129,12 +129,12 @@ constexpr HardwareConfig NON_CAMERA_VERSION_CONFIG = {
     .audio_i2s_spk_gpio_bclk = GPIO_NUM_15,
     .audio_i2s_spk_gpio_lrck = GPIO_NUM_16,
 
-    .display_backlight_pin = GPIO_NUM_3,
-    .display_mosi_pin = GPIO_NUM_10,
-    .display_clk_pin = GPIO_NUM_9,
-    .display_dc_pin = GPIO_NUM_46,
-    .display_rst_pin = GPIO_NUM_11,
-    .display_cs_pin = GPIO_NUM_12,
+    .display_backlight_pin = GPIO_NUM_9,
+    .display_mosi_pin = GPIO_NUM_41,
+    .display_clk_pin = GPIO_NUM_42,
+    .display_dc_pin = GPIO_NUM_43,
+    .display_rst_pin = GPIO_NUM_44,
+    .display_cs_pin = GPIO_NUM_NC,
 
     .i2c_sda_pin = GPIO_NUM_NC,
     .i2c_scl_pin = GPIO_NUM_NC,
@@ -156,7 +156,7 @@ constexpr HardwareConfig NON_CAMERA_VERSION_CONFIG = {
 #define CAMERA_RESET (GPIO_NUM_NC)
 #define CAMERA_XCLK_FREQ (16000000)
 #define LEDC_TIMER (LEDC_TIMER_0)
-#define LEDC_CHANNEL (LEDC_CHANNEL_0)
+#define LEDC_CHANNEL (LEDC_CHANNEL_6)
 
 #define LCD_TYPE_ST7789_SERIAL
 #define DISPLAY_WIDTH 240
